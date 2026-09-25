@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Python Application</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Python DevOps Application</h1>
+            <p>Simple Flask application without a database</p>
+        </header>
+
+        <main>
+
+            <div class="card">
+                <h2>Application Status</h2>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Application is Running
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Application Details</h2>
+
+                <p>
+                    <strong>Framework:</strong> Flask
+                </p>
+
+                <p>
+                    <strong>Database:</strong> Not Connected
+                </p>
+
+                <p>
+                    <strong>Environment:</strong>
+                    {{ request.environ.get('APP_ENV', 'development') }}
+                </p>
+            </div>
+
+            <div class="card">
+
+                <h2>API Endpoints</h2>
+
+                <ul>
+                    <li>
+                        <a href="/health" target="_blank">
+                            /health
+                        </a>
+                        - Health Check
+                    </li>
+
+                    <li>
+                        <a href="/api/info" target="_blank">
+                            /api/info
+                        </a>
+                        - Application Information
+                    </li>
+                </ul>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>
+                Python DevOps Demo Application
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+

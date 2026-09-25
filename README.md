@@ -1,9 +1,13 @@
-# doc_py_ms
-DOCKER PYTHON CODE FOR MULTISTAGE DOCKER FILE
+# Python DevOps Demo Application
 
-**Simple Flask-based Python application with no database connection**
+A simple Python Flask application created for DevOps practice.
 
-doc_py_ms/
+The application does not use a database.
+
+## Project Structure
+
+```text
+python-devops-app/
 │
 ├── static/
 │   └── style.css
@@ -14,3 +18,5 @@ doc_py_ms/
 ├── README.md
 ├── app.py
 └── requirements.txt
+
+
